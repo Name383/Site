@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <form action="action.php" method="post" class="forma">
+    <form action="index.php" method="POST" class="forma">
         <fieldset>
             <legend> Данные пользователя</legend>
-            <p> Логин <input type="text" required></p>
-            <p> E-mail <input type="email" required></p>
+            <p> Логин <input type="text" name="login" required></p><br><br>
+            <p> E-mail <input type="email" name="E-mail" required></p>
         </fieldset>
         <button type="submit">Отправить</button>
     </form>
@@ -150,6 +150,11 @@
         <h1 class="ps6">Специализировання выставка</h1>
     </section>
     </main>
+
+<script>
+    document.body.classList.add('Hello!');
+    alert(document.body.className);
+</script>
 </body>
 </html>
 <script>
@@ -161,4 +166,9 @@
             document.body.className = 'light-theme';
         }
     });
+</script>
+<script>
+    const newElement = document.createElement('div');
+    newElement.textContent = 'Добавление нового элемента';
+document.body.appendChild(newElement);
 </script>
